@@ -132,4 +132,4 @@ async def extract_menu_items(file: UploadFile = File(...)):
         return JSONResponse(content={"error": str(e)}, status_code=500)
 
 if __name__ == "__main__":
-    uvicorn.run("main:app", reload=True, host="localhost", port=8004)
+    uvicorn.run("main:app", reload=True, host="localhost", port=8000)
